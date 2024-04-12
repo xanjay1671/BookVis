@@ -1,11 +1,15 @@
 .header {
-  padding: 80px; /* some padding */
+  padding: 30px 80px ; /* some padding */
   text-align: center; /* center the text */
-  background: #1abc9c; /* green background */
+  background: #656570; /* grey background */
   color: white; /* white text color */
 }
 
 /* Increase the font size of the <h1> element */
 .header h1 {
-  font-size: 40px;
+  font-size: 80px;
+}
+
+.header p {
+  font-size: 18px;
 }
