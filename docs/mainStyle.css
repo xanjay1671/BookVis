@@ -12,5 +12,9 @@
 
 .body {
   padding: 20px 40px;
-  text-align: right;
+  text-align: left;
+}
+
+.item {
+  border-bottom: solid 8px grey;
 }

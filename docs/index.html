@@ -11,17 +11,29 @@
   </div>
   <div class="body">
     <h1>Static Graphs</h1>
-    <div id="observablehq-chart-e80e36e4"></div>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-    <script type="module">
-    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-    import define from "https://api.observablehq.com/d/6d164a6b474b1ef2.js?v=4";
-    new Runtime().module(define, name => {
-      if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-e80e36e4"));
-    });
-    </script>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt feugiat mauris, ut vehicula dui hendrerit a. Praesent vestibulum purus vel magna eleifend venenatis. Integer malesuada ipsum justo, sit amet ornare lectus pharetra eu. Vivamus quis neque a turpis accumsan blandit. Cras neque est, posuere et nulla in, consequat rutrum leo. Nulla velit urna, placerat et eleifend eget, condimentum pulvinar nunc. Quisque euismod, dui in suscipit posuere, nulla nisl suscipit lorem, nec sodales libero purus vitae risus. Morbi dictum vulputate nulla id fringilla. Proin at diam tempus, vulputate arcu ac, rhoncus leo. Integer eu ex commodo ante porta tristique. Suspendisse potenti. Nullam at lorem venenatis, tincidunt leo ut, porttitor odio. </p>
-    <p>PLACEHOLDER</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt feugiat mauris, ut vehicula dui hendrerit a. Praesent vestibulum purus vel magna eleifend venenatis. Integer malesuada ipsum justo, sit amet ornare lectus pharetra eu. Vivamus quis neque a turpis accumsan blandit. Cras neque est, posuere et nulla in, consequat rutrum leo. Nulla velit urna, placerat et eleifend eget, condimentum pulvinar nunc. Quisque euismod, dui in suscipit posuere, nulla nisl suscipit lorem, nec sodales libero purus vitae risus. Morbi dictum vulputate nulla id fringilla. Proin at diam tempus, vulputate arcu ac, rhoncus leo. Integer eu ex commodo ante porta tristique. Suspendisse potenti. Nullam at lorem venenatis, tincidunt leo ut, porttitor odio. </p>
+    <div class="item">
+      <h2>Books written by genre over time</h2>
+      <div id="observablehq-chart-e80e36e4"></div>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+      <script type="module">
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+      import define from "https://api.observablehq.com/d/6d164a6b474b1ef2.js?v=4";
+      new Runtime().module(define, name => {
+        if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-e80e36e4"));
+      });
+      </script>
+    </div>
+    <div class="item">
+      <h2>Links Between Genres</h2>
+      <div id="observablehq-chart-1da6b627"></div>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+      <script type="module">
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+      import define from "https://api.observablehq.com/d/61d65ac6ec84d103@763.js?v=4";
+      new Runtime().module(define, name => {
+        if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-1da6b627"));
+      });
+      </script>
+    </div>
   </div>
 </html>
