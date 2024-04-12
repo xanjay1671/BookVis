@@ -18,3 +18,7 @@
 .item {
   border-bottom: solid 2px grey;
 }
+
+.item p {
+  max-width: 65ch;
+}
