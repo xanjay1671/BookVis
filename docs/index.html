@@ -1,59 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>BookVis</title>
-    <link rel="stylesheet" href="mainStyle.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="BookvisLogo.ico">
-  </head>
-  <div class="header">
-    <h1>BookVis</h1>
-    <p>A page dedicated to the visualization of writing and reading</p>
-  </div>
-  <div class="body">
-    <h1>Graphs</h1>
-    <div class="item">
-      <h2>Books written by genre over time</h2>
-      <div id="observablehq-chart-e80e36e4"></div>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-      <script type="module">
-      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+
+<head>
+  <meta charset="utf-8" />
+  <title>BookVis</title>
+  <link rel="stylesheet" href="mainStyle.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<div class="header">
+  <h1>BookVis</h1>
+  <p>A page dedicated to the visualization of writing and reading</p>
+</div>
+<div class="body">
+  <h1>Graphs</h1>
+  <div class="item">
+    <h2>Books written by genre over time</h2>
+    <div id="observablehq-chart-e80e36e4"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+      import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
       import define from "https://api.observablehq.com/d/6d164a6b474b1ef2.js?v=4";
       new Runtime().module(define, name => {
         if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-e80e36e4"));
       });
-      </script>
-      <p>The first and most fundumental of the visualizations, showing the trend in books being written over time. We are using a dataset of 10000 books with a bias towards 2012. Our data is imperfect but sufficient for interesting analysis.</p>
-    </div>
-    <div class="item">
-      <h2>Links Between Genres</h2>
-      <div id="observablehq-chart-1da6b627"></div>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-      <script type="module">
-      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+    </script>
+    <p>The first and most fundumental of the visualizations, showing the trend in books being written over time. We are
+      using a dataset of 10000 books with a bias towards 2012. Our data is imperfect but sufficient for interesting
+      analysis.</p>
+  </div>
+  <div class="item">
+    <h2>Links Between Genres</h2>
+    <div id="observablehq-chart-1da6b627"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+      import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
       import define from "https://api.observablehq.com/d/61d65ac6ec84d103@763.js?v=4";
       new Runtime().module(define, name => {
         if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-1da6b627"));
       });
-      </script>
-      <p>
-        This is a chord diagram depicting how genres are related to each other.  Each book is classified as several genres, and as such, similarities and overlaps between genres can be found.  For instance, there is a large overlap between fantasy and romance, however there are very few commons books between nonfiction and historical fiction.
-      </p>
-    </div>
-    <div class="item">
-      <h2>Average Rating by Genre</h2>
-      <div id="observablehq-chart-c1c621e6"></div>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-      <script type="module">
-      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+    </script>
+    <p>
+      This is a chord diagram depicting how genres are related to each other. Each book is classified as several genres,
+      and as such, similarities and overlaps between genres can be found. For instance, there is a large overlap between
+      fantasy and romance, however there are very few commons books between nonfiction and historical fiction.
+    </p>
+  </div>
+  <div class="item">
+    <h2>Average Rating by Genre</h2>
+    <div id="observablehq-chart-c1c621e6"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+      import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
       import define from "https://api.observablehq.com/d/4595d3d28aed7a0c.js?v=4";
       new Runtime().module(define, name => {
         if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-c1c621e6"));
         return ["update"].includes(name);
       });
-      </script>
-      <p>A quick look at the rating distributions of genres. This graph is categorized with the raw input genre data, as opposed to a shortened genre list many of the other visualizations use, to better analyze outliers.</p>
-      <p>On the positive side, the top three highest rated genres are three varieties of illustrations. Additionally, young-adult is the genre with the fifth highest average - together indicating a bias of younger readers to be more generous with ratings. </p>
-    </div>
+    </script>
+    <p>A quick look at the rating distributions of genres. This graph is categorized with the raw input genre data, as
+      opposed to a shortened genre list many of the other visualizations use, to better analyze outliers.</p>
+    <p>On the positive side, the top three highest rated genres are three varieties of illustrations. Additionally,
+      young-adult is the genre with the fifth highest average - together indicating a bias of younger readers to be more
+      generous with ratings. </p>
   </div>
+</div>
+
 </html>
