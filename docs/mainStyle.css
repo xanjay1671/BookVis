@@ -3,10 +3,14 @@ body {
 }
 
 .header {
-  padding: 5px 40px; /* some padding */
-  text-align: center; /* center the text */
-  background: #2b2b4f; /* grey background */
-  color: #ede4ca; /* white text color */
+  padding: 5px 40px;
+  /* some padding */
+  text-align: center;
+  /* center the text */
+  background: #2b2b4f;
+  /* grey background */
+  color: #ede4ca;
+  /* white text color */
   font-family: 'Oswald';
 }
 
@@ -16,8 +20,10 @@ body {
   color: white;
 }
 
-.nav-sidebar > div {
+.nav-sidebar {
+  padding: 0% 0% 5% 5%;
   background: #ede4ca;
+  border-right: 2px solid #2b2b4f;
 }
 
 .body {
@@ -31,12 +37,31 @@ body {
   background-color: #f1f1f1;
 }
 
-.flex-container > div {
+.flex-container>div {
   background-color: white;
   margin: 10px;
   text-align: center;
   line-height: 75px;
   font-size: 30px;
+}
+
+.whole-container {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+
+.element-container {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  padding: 2%;
+}
+
+.explanation-text {
+  padding: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* background-color: #f1f1f1; */
 }
 
 .item {
@@ -46,5 +71,3 @@ body {
 .item p {
   max-width: 860px;
 }
-
-

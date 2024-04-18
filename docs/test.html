@@ -11,17 +11,13 @@
     <h1>BookVis</h1>
     <p>A page dedicated to the visualization of writing and reading</p>
 </div>
-<div class="flex-container">
-    <div style="flex-grow: 2;">
-        <div class="nav-sidebar">
-            <h2>Navigation</h2>
-        </div>
-
+<div class="whole-container">
+    <div class="nav-sidebar">
+        <h2>Navigation</h2>
     </div>
-    <div style="flex-grow: 3;">
-        <h2>Graphs</h2>
-        <div class="flex-container">
-            <div style="flex-grow: 3;">
+    <div>
+        <div class="element-container">
+            <div>
                 <h2>Books written by genre over time</h2>
                 <div id="observablehq-chart-e80e36e4"></div>
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
@@ -32,15 +28,17 @@
                         if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-e80e36e4"));
                     });
                 </script>
+
             </div>
-            <div style="flex-grow: 1;">
-                <p>The first and most fundumental of the visualizations, showing the trend in books being written over
-                    time. We are
-                    using a dataset of 10000 books with a bias towards 2012. Our data is imperfect but sufficient for
-                    interesting
+            <div class="explanation-text">
+                <p>The first and most fundumental of the visualizations, showing the trend in books being written
+                    over time. We are
+                    using a dataset of 10000 books with a bias towards 2012. Our data is imperfect but sufficient
+                    for interesting
                     analysis.</p>
             </div>
         </div>
     </div>
+</div>
 
 </html>
