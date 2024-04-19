@@ -143,6 +143,27 @@
     </div>
     <div class="element-container">
       <div>
+        <h2>Relative Popularity Over Time</h2>
+        <div id="observablehq-chart-982520ae"></div>        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+        <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+        import define from "https://api.observablehq.com/d/3f426cfc89cceb03.js?v=4";
+        new Runtime().module(define, name => {
+          if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-982520ae"));
+        });
+        </script>
+      </div>
+      <div class="explanation-text">
+        <div>
+          <p>
+            This is the most chaotic graph yet, due to the randomness of which book may become popular and the small number of books in the data in the 1900s.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="element-container">
+      <div>
         <h2>Length vs Popularity</h2>
         <img src="./assets/images/pages_vs_num_reviews_log.png?" width="600px" alt="MISSING">
       </div>
