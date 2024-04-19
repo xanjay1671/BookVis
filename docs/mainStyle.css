@@ -42,7 +42,8 @@ body {
   padding: 0%;
   list-style: none;
   float: none;
-  position: fixed;
+  position: sticky;
+  top: 20px;
 }
 
 .nav-sidebar ul li {
