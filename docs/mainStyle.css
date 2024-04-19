@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-size:larger;
+  font-size: larger;
 }
 
 .header {
@@ -71,7 +71,8 @@ body {
 }
 
 .tick {
-  writing-mode: sideways-lr; text-orientation: mixed;
+
+  /* Should be unset in IE9+ I think. */
 }
 
 .body {

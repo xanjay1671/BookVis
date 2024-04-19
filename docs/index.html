@@ -121,18 +121,18 @@
           <div id="observablehq-update-793767ee"></div>
           <div id="observablehq-data-793767ee"></div>
           <div id="observablehq-trigger-793767ee"></div>
-        </div>       
+        </div>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
         <script type="module">
-        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-        import define from "https://api.observablehq.com/d/477a5bc7a81313ac.js?v=4&api_key=b1d4293518be757fbb31b1a11e9d005015b4f077";
-        new Runtime().module(define, name => {
-          if (name === "trigger") return new Inspector(document.querySelector("#observablehq-trigger-793767ee"));
-          if (name === "viewof order") return new Inspector(document.querySelector("#observablehq-viewof-order-793767ee"));
-          if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-793767ee"));
-          if (name === "update") return new Inspector(document.querySelector("#observablehq-update-793767ee"));
-          if (name === "data") return new Inspector(document.querySelector("#observablehq-data-793767ee"));
-        });
+          import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+          import define from "https://api.observablehq.com/d/477a5bc7a81313ac.js?v=4&api_key=b1d4293518be757fbb31b1a11e9d005015b4f077";
+          new Runtime().module(define, name => {
+            if (name === "trigger") return new Inspector(document.querySelector("#observablehq-trigger-793767ee"));
+            if (name === "viewof order") return new Inspector(document.querySelector("#observablehq-viewof-order-793767ee"));
+            if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-793767ee"));
+            if (name === "update") return new Inspector(document.querySelector("#observablehq-update-793767ee"));
+            if (name === "data") return new Inspector(document.querySelector("#observablehq-data-793767ee"));
+          });
         </script>
       </div>
       <div class="explanation-text">
@@ -144,6 +144,26 @@
       <div>
         <h2>Length vs Popularity</h2>
         <img src="./assets/images/pages_vs_num_reviews_log.png?" width="600px" alt="MISSING">
+      </div>
+      <div class="explanation-text">
+        <div>
+          <p>
+            This scatter plot showcases the relationship - or lack thereof - between book length and average book
+            rating. Additionally, books with larger review counts are shown in larger, more vibrant points. Note that
+            the x-axis is using a log scale.
+
+          </p>
+          <p>We calculated that there is no significant correlation between book length and average rating; running a
+            linear regression results in an R squared value of 0.015, which is far from statistically significant.
+            Similarly, running a linear regression between number of ratings and average rating produces an R squared
+            value of 0.002, suggesting that books that are rated more are not generally rated higher nor lower.
+          </p>
+          <p>The number of ratings, however, do seem to highlight some interesting patterns. The most rated books
+            generally seem to be in the range of 200 to 800 pages long, with a sharp fall off for both much longer and
+            much shorter books. This is unsurprising, as the common reader is most likely to read books that fall within
+            the above lengths.
+          </p>
+        </div>
       </div>
     </div>
   </div>
