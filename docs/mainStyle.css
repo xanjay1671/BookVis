@@ -108,3 +108,9 @@ body {
 .item p {
   max-width: 860px;
 }
+
+.invisible {
+  visibility: hidden;
+  position: absolute;
+  top: -9999px;
+}

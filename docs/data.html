@@ -26,6 +26,30 @@
     </div>
     <div class="element-container">
       <div>
+        <h2>Books written by genre over time</h2>
+        <div id="observablehq-chart-e80e36e4"></div>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+        <script type="module">
+          import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+          import define from "https://api.observablehq.com/d/6d164a6b474b1ef2.js?v=4";
+          new Runtime().module(define, name => {
+            if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-e80e36e4"));
+          });
+        </script>
+      </div>
+      <div class="explanation-text">
+        <div>
+          <p>Our dataset is comprised of 10000 most popular books, as noted in a snapshot of popularity taken in 2016.
+            We selected this dataset because it had more details for each entry availible and the bias towards
+            popularity makes the results more representitive of the books you could expect to find.</p>
+          <p>Note the peak in 2012 - books seem to take a little while to gain momentum and popularity. When updated for
+            a later dataset, we would expect to see a similar delay as people need time to find, read, and record newly
+            published books.</p>
+        </div>
+      </div>
+    </div>
+    <div class="element-container">
+      <div>
         <img src="./assets/images/genre_heatmap.png?" width="600px" alt="MISSING">
       </div>
     </div>
