@@ -113,6 +113,34 @@
         </div>
       </div>
     </div>
+    <div class="element-container">
+      <div>
+        <h2>Average Length by Genre</h2>
+        <div id="observablehq-viewof-order-793767ee"></div>
+        <div id="observablehq-chart-793767ee"></div>
+        <div class="invisible">
+          <div id="observablehq-update-793767ee"></div>
+          <div id="observablehq-data-793767ee"></div>
+          <div id="observablehq-trigger-793767ee"></div>
+        </div>       
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+        <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+        import define from "https://api.observablehq.com/d/477a5bc7a81313ac.js?v=4&api_key=b1d4293518be757fbb31b1a11e9d005015b4f077";
+        new Runtime().module(define, name => {
+          if (name === "trigger") return new Inspector(document.querySelector("#observablehq-trigger-793767ee"));
+          if (name === "viewof order") return new Inspector(document.querySelector("#observablehq-viewof-order-793767ee"));
+          if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-793767ee"));
+          if (name === "update") return new Inspector(document.querySelector("#observablehq-update-793767ee"));
+          if (name === "data") return new Inspector(document.querySelector("#observablehq-data-793767ee"));
+        });
+        </script>
+      </div>
+      <div class="explanation-text">
+        <div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
