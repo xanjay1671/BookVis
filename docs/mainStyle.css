@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-size: larger;
+  font-family: 'Verdana'
 }
 
 .header {
@@ -12,7 +13,6 @@ body {
   /* grey background */
   color: #ede4ca;
   /* white text color */
-  font-family: 'Oswald';
 }
 
 .footer {
@@ -24,7 +24,7 @@ body {
   /* grey background */
   color: #ede4ca;
   /* white text color */
-  font-family: 'Oswald';
+  ;
 }
 
 /* Increase the font size of the <h1> element */
