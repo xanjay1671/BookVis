@@ -15,8 +15,8 @@
   <div class="nav-sidebar">
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="test.html">Test</a></li>
-      <li><a href="data.html">Data Manipulation</a></li>
+      <li><a href="data.html">Data Aggregation</a></li>
+      <li><a href="https://observablehq.com/@xanjay-ws?tab=profile">View Graphs in Observable</a></li>
     </ul>
   </div>
   <div>
@@ -54,7 +54,34 @@
     </div>
     <div class="element-container">
       <div>
-        <p>Out-of-line explanation text</p>
+        <p>
+          Pictured above is a heatmap that shows the overlap between genres in the dataset. Because each book can have
+          multiple genres, we can identify genres that have significant or little overlap with one another. For
+          instance,
+          the bright yellow square at the intersection between nonfiction and business indicates that most business
+          books
+          are also tagged as nonfiction.
+        </p>
+        <p>
+          The heatmap is not symmetrical - this is due to each genre having a different number of books. For example,
+          all
+          cookbooks may be nonfiction, but not all nonfiction books are cookbooks. This is most evident with the fiction
+          row, where many genres predominantly consist of books that are also labelled as fiction.
+        </p>
+        <p>
+          To improve readability of the streamgraphs and other charts, we decided to reduce the number of genres to
+          minimize visual clutter. Ultimately, we grouped the smallest 23 genres into an 'other' category, keeping the
+          15
+          largest genres separate.
+        </p>
+        <p>
+          The condensed heatmap below reflects this change. The 'other' genre significantly reduces the visual
+          complexity
+          - at the cost of lost information - while also addressing the issue of extremely sparse data with some genres.
+          The humor genre, for instance, only has 4 books associated with it. This can lead to rows in the full heatmap
+          being relatively binary - either fully overlapping or not at all. Overall, the condensed heatmap is more
+          balanced, with much fewer extremes.
+        </p>
       </div>
     </div>
 

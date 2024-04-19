@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-size:larger;
 }
 
 .header {
@@ -57,12 +58,20 @@ body {
   text-decoration: none;
 }
 
-.nav-sidebar ul li a:visited {
+.nav-sidebar ul li a {
   color: white;
+}
+
+.nav-sidebar ul li a:visited {
+  color: lavender;
 }
 
 .nav-sidebar ul li a:hover {
   color: pink;
+}
+
+.tick {
+  writing-mode: sideways-lr; text-orientation: mixed;
 }
 
 .body {
